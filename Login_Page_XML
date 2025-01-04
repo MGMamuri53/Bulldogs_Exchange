@@ -94,14 +94,36 @@
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="295dp"
-        android:layout_height="118dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Show off your NU pride with the coolest National University
-        T-shirt designs and Merch! Snag yours at the Bulldogs Exchange, located on the 4th floor of NU Dasmariñas. Open every Monday to Friday from 8:30 AM to 4:00 PM."
+        android:layout_width="334dp"
+        android:layout_height="112dp"
+        android:textAlignment="justification"
+        android:ems="5"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:text="Show off your NU pride with the coolest National University T-shirt designs and Merch! Snag yours at the Bulldogs Exchange, located on the 4th floor of NU Dasmariñas. Open every Monday to Friday from 8:30 AM to 4:00 PM."
         tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="140dp" />
+        tools:layout_editor_absoluteY="132dp" />
+
+    <View
+        android:layout_width="2in"
+        android:layout_height="3dp"
+        android:background="#000000"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="550dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:background="#ef6b48"
+        android:fontFamily="sans-serif-black"
+        android:text="Create Account"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="583dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

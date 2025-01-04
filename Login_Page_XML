@@ -13,7 +13,7 @@
         android:layout_height="374dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-54dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        tools:srcCompat="@drawable/long_in_user_background_bulldog" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +47,8 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="46dp"
-            android:text="Button"
+            android:text="Login"
+            android:fontFamily="sans-serif-black"
             android:backgroundTint="#e4ca23"
             android:textColor="@android:color/white"
             android:layout_marginTop="16dp" />
@@ -76,5 +77,31 @@
         app:srcCompat="@android:drawable/ic_menu_revert"
         tools:layout_editor_absoluteX="-12dp"
         tools:layout_editor_absoluteY="-9dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:ems="5"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:fontFamily="sans-serif-black"
+        android:text="Login"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="295dp"
+        android:layout_height="118dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Show off your NU pride with the coolest National University
+        T-shirt designs and Merch! Snag yours at the Bulldogs Exchange, located on the 4th floor of NU Dasmariñas. Open every Monday to Friday from 8:30 AM to 4:00 PM."
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="140dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

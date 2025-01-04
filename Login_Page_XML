@@ -9,14 +9,18 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="411dp"
-        android:layout_height="374dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-54dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintDimensionRatio="411:374"
         tools:srcCompat="@drawable/long_in_user_background_bulldog" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/imageView"
@@ -41,8 +45,6 @@
             android:background="@android:drawable/edit_text"
             android:layout_marginTop="8dp" />
 
-
-
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
@@ -52,21 +54,6 @@
             android:backgroundTint="#e4ca23"
             android:textColor="@android:color/white"
             android:layout_marginTop="16dp" />
-
-        <!--<TextView
-        android:id="@+id/underline_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="20dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:gravity="center"
-        android:text="Forgot Password?"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:underlineText="true" />-->
-
     </LinearLayout>
 
     <ImageButton
@@ -75,8 +62,10 @@
         android:layout_height="69dp"
         android:background="@android:color/transparent"
         app:srcCompat="@android:drawable/ic_menu_revert"
-        tools:layout_editor_absoluteX="-12dp"
-        tools:layout_editor_absoluteY="-9dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -89,13 +78,15 @@
         android:inputType="text"
         android:fontFamily="sans-serif-black"
         android:text="Login"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="42dp" />
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="334dp"
-        android:layout_height="112dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:ems="5"
         android:gravity="top|start"
         android:inputType="textMultiLine"
@@ -104,25 +95,34 @@
         android:padding="8dp"
         android:scrollbars="vertical"
         android:text="Show off your NU pride with the coolest National University T-shirt designs and Merch! Snag yours at the Bulldogs Exchange, located on the 4th floor of NU Dasmariñas. Open every Monday to Friday from 8:30 AM to 4:00 PM."
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="132dp" />
-
-    <View
-        android:layout_width="2in"
-        android:layout_height="3dp"
-        android:background="#000000"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="550dp" />
+        app:layout_constraintTop_toBottomOf="@id/editTextText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="42dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="336dp"
+        android:layout_width="0dp"
         android:layout_height="45dp"
+        android:layout_marginHorizontal="37dp"
+        android:layout_marginTop="316dp"
         android:background="#ef6b48"
         android:fontFamily="sans-serif-black"
         android:text="Create Account"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="583dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextText2" />
 
-
+    <View
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="296dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextText2"
+        app:layout_constraintWidth_percent="0.8" />
 </androidx.constraintlayout.widget.ConstraintLayout>

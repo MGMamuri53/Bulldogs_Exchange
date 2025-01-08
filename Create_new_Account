@@ -16,19 +16,48 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="421dp"
-            android:layout_height="224dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/long_in_user_background_bulldog" />
 
 
     </LinearLayout>
+    <TextView
+        android:id="@+id/textViewCreateNewAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Create a New Account"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingTop="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewQuickandEasy"
+        app:layout_constraintTop_toTopOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textViewQuickandEasy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="It’s quick and easy."
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/textViewCreateNewAcc"
+        app:layout_constraintStart_toStartOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="69dp"
         android:layout_height="55dp"
+        android:background="@android:color/transparent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
 
     <ScrollView
         android:id="@+id/formScrollView"
@@ -217,8 +246,6 @@
                     android:textSize="16sp" /> -->
             </LinearLayout>
         </LinearLayout>
-
-
     </ScrollView>
 
 

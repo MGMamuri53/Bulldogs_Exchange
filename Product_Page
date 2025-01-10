@@ -198,7 +198,6 @@
 
                 <ImageView
                     android:id="@+id/imageView1"
-                    android:layout_width="300dp"
                     android:layout_width="414dp"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
@@ -206,7 +205,6 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="300dp"
                     android:layout_width="414dp"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
@@ -214,7 +212,6 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="300dp"
                     android:layout_width="414dp"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
@@ -222,7 +219,6 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="300dp"
                     android:layout_width="414dp"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
